@@ -2,3 +2,4 @@ Duplicar línea de código: COMANDO + D
 Eliminar línea de código : COMANDO + Y
 Rehacer cambios : SHIFT+CONTROL+Z
 DESHACER CAMBIOS: CONTROL+Z
+Mover líneas de códido: ALT+SHIFT+FLECHA
