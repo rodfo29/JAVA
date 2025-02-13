@@ -8,7 +8,7 @@ public class Calculadora {
         return a*b;
     }
 
-    public static int division(int a,int b){
+    public static float division(float a,int b){
         if (b!=0){
             return a/b;
         }

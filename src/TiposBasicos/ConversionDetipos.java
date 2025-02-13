@@ -9,7 +9,7 @@ public class ConversionDetipos {
 
         // Conversión Explícita
         int x =15;
-        double y=15.015;
+        double y=15.015f;
         int z= (int)(x+y); // Tipo c que antes de la variable ponemos en paréntesis el tipo de dato que queremos convertir el valor o la variable misma.
 
         String j="1.1";
