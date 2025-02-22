@@ -1,0 +1,56 @@
+Relacionamos distintas clases por tener comportamientos en concreto. Podemos utilizar a distintas entidades como un grupo
+por tener un/unos métodos en común o por cumplir el contrato que establece la interfaz, lo que nos permite por ejemplo poder
+
+definir: - Como parámetro Una variable de Dato Empleados, que permitirá relacionar todos los empleados que puedan
+            cumplir una acción/acciones específicas.
+
+         - Definir una interfaz para poder Relacionar distintos tipos de pago y poder hacer uso del polimorfismo y
+         no depender de una clase en particular.
+
+Es algo que tiene que hacer el objeto, pero da lo mismo que instancia sea.
+
+Igual y podríamos definir una superclase para poder ahorrar el código de los datos personales y métodos comunes, pero
+con la interfaz asignar comportamientos específicos a ciertos empleados.
+
+EJ:
+
+      ======= COMBINACIÓN:" Superclase Empleado + Interfaces para roles específicos" =======
+    Interfaces: TrabajadorRemoto, TrabajadorMantenimiento, TrabajadorLimpieza.
+
+    - Solo los cajeros y el gerente pueden atender a la caja registradora
+    - Solo los Mesoneros y Los Cocineros pueden entrar En La Cocina.
+    - Solo el conserje puede Reparar las intalaciones.
+
+    Clase abstracta:
+    - nombre, Sueldo
+    métodos:
+        mostrarInfo()
+        saludar()
+
+
+ CLASES ASBTRACTAS:
+ Relacionar por atributos y métodos comunes. Por lo general necesitaremos usar clases abstractac para ser modelo de clases
+ que son una versión específica de la superclase. A diferencia de las interfaces que los único que buscan que buscan es
+ asignar un comportamiento específico que posteriormente puede servir para relacionar clases.
+
+ INTERFACES:
+ Relacionar por comportamientos específicos. Quieres que una clase tenga un comportamiento en específico que puede ayudar
+ a relacionar clases que no son del mismo tipo. Con solo tener 1 comportamiento en común es suficiente para declarar una interfaz
+ que nos permita relacionar distintas clases:
+
+    EJ:
+        Teléfono extends Dispositivo.
+            - Puede Mandar mensajes
+        PalomaMensajera extends Animal.
+            _ puede mandar mensajes
+
+        Creamos una interfaz:
+            interface EnviadorMensaje{
+             enviarMensaje(String): void
+            }
+
+        Así podremos Usar el polimorfismo para poder usar tanto las palomas mensajeras como los teléfonos para enviar información.
+
+    Asignar permisos/comportamientos/habilidades a una clase.
+
+

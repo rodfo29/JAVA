@@ -15,6 +15,7 @@ public class Calculadora {
         System.out.println("Operación no válida. No se puede dividir entre 0");
         return b;
     }
+
     public static int resta(int a,int b){
         return a-b;
     }

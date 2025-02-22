@@ -17,7 +17,7 @@ public class FormatoDeNumeros {
         String Porcentaje=numberFormat1.format(1); // ---> 100%
         String Porcentaje_2=numberFormat1.format(0.25); // ---> 25%
 
-        System.out.println(Porcentaje_2);
+       System.out.println(Porcentaje_2);
        System.out.println("Total a pagar: "+result);
     }
 }

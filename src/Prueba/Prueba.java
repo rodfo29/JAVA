@@ -8,7 +8,7 @@ public class Prueba {
 
         System.out.print("Ingresar edad del usuario: ");
         int edad=scanner.nextInt();
-        System.out.println("La edad ingresada es: "+edad);
+        System.out.println("La edad ingresada es: " +edad);
 
     }
 }

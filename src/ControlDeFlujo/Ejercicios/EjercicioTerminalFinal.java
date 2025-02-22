@@ -4,7 +4,7 @@ import TiposBasicos.calculadora.Calculadora;
 import java.util.Scanner;
 
 public class EjercicioTerminalFinal {
-    public static void MenuCalculadora(){
+     static void MenuCalculadora(){
         Scanner scanner= new Scanner(System.in);
         int input=0;
         int num1;
@@ -71,7 +71,7 @@ public class EjercicioTerminalFinal {
     /*  Los métodos estáticos (static) pertenecen a la clase, mientras que los métodos no estáticos pertenecen a una instancia de la clase.
 💡   Los métodos estáticos NO pueden acceder directamente a métodos no estáticos porque no hay una instancia de la clase para usarlos.
     */
-    public static void nasa(){
+     static void nasa(){
         for (int i=0;i<5;i++){
             for (int j=0;j<i+1;j++){
                 System.out.print("#");
@@ -79,11 +79,14 @@ public class EjercicioTerminalFinal {
             System.out.println();
         }
     }
+
+
     public static void main(String[] args)
     {
         int input=0;
         Scanner scanner= new Scanner(System.in);
-        while(input!=3){
+        while(input!=3)
+        {
             System.out.println("1- Calculadora");
             System.out.println("2- Hackear la nasa ");
             System.out.println("3- Salir");

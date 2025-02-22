@@ -1,0 +1,2 @@
+Tomando en cuenta el ejercicio anterior, el siguiente reto es que ahora las categorias para poder setearlas primero
+debemos verificar que se encuentren en una arreglo de tipo static.

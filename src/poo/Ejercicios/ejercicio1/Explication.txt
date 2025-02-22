@@ -1,0 +1,5 @@
+Crear la clase VideoGames con las propiedades:
+    - Name (String
+    - Price (int)
+    - Category (String)
+ Getters y Setters para todas las propiedades.
