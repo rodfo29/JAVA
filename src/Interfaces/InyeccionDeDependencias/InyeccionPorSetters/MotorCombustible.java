@@ -20,7 +20,7 @@ public class MotorCombustible implements IMotor{
 
         if (!this.isActive){
             this.isActive=true;
-            System.out.println("Encendiendo motor....");
+            System.out.println("Motor Encendido....");
         }else{
             System.out.println("Motor Ya encendido!!!");
         }
@@ -49,4 +49,8 @@ public class MotorCombustible implements IMotor{
         System.out.println("\n\nModelo: "   +   this.modeloMotor    +  "\nTipo de Motor: Combustible"  + "\nTipo de Combustible: "   +   this.tipoCombustible);
     }
 
+    @Override
+    public boolean motorStatus(){
+        return this.isActive;
+    }
 }

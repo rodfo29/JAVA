@@ -5,7 +5,8 @@ public interface IMotor {
     void encender();
     void apagar();
     void recargarMotor();   // Recargar el motor de combustible o de energía.
-    void infoMotor();
+    void infoMotor(); // Detalles del motor, nombre, modelo, etc.
+    boolean motorStatus(); // Estado del motor: (Encendido= True) === (Apagado = false)
 }
 
 // a la hora de usar como tipo de dato IMotor, el polimorfismo solo nos dejará usar los métodos que tengan

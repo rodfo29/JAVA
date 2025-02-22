@@ -12,5 +12,18 @@ public class Main {
         corolla.setMotor(motorCombustible); // Con este setter podemos cambiar las dependencias en caliente.
 
         corolla.infoMotor();
+        corolla.encenderCarro();
+        corolla.acelerar();
+        corolla.acelerar();
+        corolla.acelerar();
+        corolla.acelerar();
+
+        corolla.frenar();
+        corolla.frenar();
+        corolla.frenar();
+        corolla.frenar();
+
+        corolla.apagarCarro();
+        corolla.acelerar();
     }
 }

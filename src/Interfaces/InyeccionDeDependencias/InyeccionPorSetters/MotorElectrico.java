@@ -13,23 +13,17 @@ public class MotorElectrico implements IMotor{
 
     @Override
     public void encender(){
-        if (!this.isActive){
-            this.isActive=true;
-            System.out.println("Encendiendo motor...");
-        }else{
-            System.out.println("El motor ya está encendido!!!");
+        if (!this.isActive) {
+            this.isActive = true;
+            System.out.println(" Motor Encendido...");
         }
 
     }
     @Override
     public void apagar(){
-        if (this.isActive){
-            this.isActive=false;
+        if (this.isActive) {
+            this.isActive = false;
             System.out.println("Apagando motor...");
-        }else {
-
-            System.out.println("El motor ya está apagado....");
-
         }
     }
 
@@ -44,5 +38,9 @@ public class MotorElectrico implements IMotor{
         System.out.println("\n\nModelo: "   +   this.modeloMotor    +   "\nTipo de motor: Eléctrico ");
     }
 
+    @Override
+    public boolean motorStatus(){
+        return this.isActive;
+    }
 }
 
