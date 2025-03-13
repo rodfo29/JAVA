@@ -13,17 +13,16 @@ public class Main {
 
         corolla.infoMotor();
         corolla.encenderCarro();
-        corolla.acelerar();
-        corolla.acelerar();
-        corolla.acelerar();
-        corolla.acelerar();
+        corolla.
+                acelerar()
+                .acelerar()
+                .acelerar()
+                .acelerar()
+                .frenar()
+                .frenar()
+                .frenar()
+                .recargarCombustible()
+                .apagarCarro();
 
-        corolla.frenar();
-        corolla.frenar();
-        corolla.frenar();
-        corolla.frenar();
-
-        corolla.apagarCarro();
-        corolla.acelerar();
     }
 }

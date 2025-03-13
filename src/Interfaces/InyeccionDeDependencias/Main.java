@@ -18,8 +18,10 @@ public class Main {
         // Intancias que pueden Atender mesas.
         IAtenderMesa[]  atendedoresMesa={cajero1,mesonero1,mesonero2,cocinero1};
 
+
         // Instancias que pueden Preparar Comida.
         ICocinar[] atendedoresCocina={cocinero1};
+
 
 
         Restaurante restaurantAuraBurguer= new Restaurante(empleados,atendedoresMesa,atendedoresCocina);

@@ -11,6 +11,7 @@ public class Carro {
     }
 
 
+
     // Usando un setter tenemos la posibilidad de cambiar la dependencia en caliente.
     public void setMotor(IMotor newMotor){
         this.motor=newMotor;
@@ -27,33 +28,37 @@ public class Carro {
 
 
 
-    public void apagarCarro(){
+    public Carro apagarCarro(){
         if (this.motor.motorStatus()){
             System.out.println("Apagando Carro");
             this.motor.apagar();
         }else{
             System.out.println("El carro ya está apagado!!! ");
         }
-
-
-
+        return this;
     }
 
 
 
-    public void infoMotor(){
+
+
+    public Carro infoMotor(){
         this.motor.infoMotor(); // Desplegamos la información del motor
+        return this;
     }
 
-    public void acelerar(){
+
+    public Carro acelerar(){
         if (this.motor.motorStatus()){ // si el motor está encendido podemos acelerar.
             System.out.println("[+] Aumentando velocidad: " +   this.velocidad  +   " ---> " +   (this.velocidad+=10));
         }else {
             System.out.println("[!] El carro está apagado, por favor encender para poder acelerar...");
         }
+        return this;
     }
 
-    public void frenar(){
+    // Podemos encadenar los métodos de frenar y acelerar.
+    public Carro frenar(){
         if (this.motor.motorStatus() && this.velocidad>0){ // si el motor está encendido podemos acelerar y la velocidad es como mínimo mayor que 0;
             System.out.println("[+] Disminuyendo velocidad: "   +   this.velocidad  +   " ---> "  +  (this.velocidad-=10) );
         }else if (this.velocidad==0){
@@ -62,7 +67,14 @@ public class Carro {
             System.out.println("[!]  El motor debe estar encendido");
             ;
         }
+        return this;
 
+
+    }
+
+    public Carro recargarCombustible(){
+        this.motor.recargarMotor();
+        return this;
     }
 
 }

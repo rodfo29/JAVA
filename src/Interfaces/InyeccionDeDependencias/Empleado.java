@@ -23,6 +23,7 @@ public abstract class Empleado {
 
     }
 
+
     public void setName(String newName){
         this.name=newName;
     }

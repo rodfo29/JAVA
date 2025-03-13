@@ -3,9 +3,11 @@ package Interfaces.InyeccionDeDependencias;
 public class Cajero extends Empleado implements IAtenderMesa {
 
 
+
     public Cajero(String name,int sueldo){
         super(name,sueldo);
     }
+
 
     @Override
     public void atenderMesa(){

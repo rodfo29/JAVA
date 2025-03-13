@@ -15,5 +15,5 @@ public interface IMotor {
 // Esta actúa como la clase superMadre.
 
 
-// clases que no terminar de  relacionarse/ser semejantes del todo en cuanto a atributos/métodos, y que al cumplir este contrato esteblecido, ya pueden implementar todo tipo de atributos y métodos propios,
+// clases que no terminar de  relacionarse/ser semejantes del todo en cuanto a atributos/métodos, y que al cumplir este contrato establecido, ya pueden implementar todo tipo de atributos y métodos propios,
 // considerándose aún motores, y además, permitiendo relacionarlos bajo 1 mismo tipo de dato.
